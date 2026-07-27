@@ -21,3 +21,21 @@
  * 2. Store the temperature data in a single collection.
  * 3. Display the temperature data using console.log.
  */
+
+type Suhu = {
+  waktu: string;
+  suhu: number;
+};
+
+const suhuHariIni: Suhu[] = [
+  { waktu: "08:00", suhu: 24.5 },
+  { waktu: "09:00", suhu: 25.1 },
+  { waktu: "10:00", suhu: 26.8 },
+  { waktu: "11:00", suhu: 28.4 },
+  { waktu: "12:00", suhu: 30.2 },
+  { waktu: "13:00", suhu: 31.1 },
+  { waktu: "14:00", suhu: 30.7 },
+  { waktu: "15:00", suhu: 29.3 }
+];
+
+console.log(suhuHariIni);

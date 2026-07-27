@@ -16,3 +16,20 @@
  * 2. Store the product data in a single collection.
  * 3. Display the product data using console.log.
  */
+
+type ProdukKeranjang = {
+  kodeProduk: string;
+  namaProduk: string;
+  hargaSatuan: number;
+  jumlah: number;
+  gratisOngkir: boolean;
+};
+
+const keranjangBelanja: ProdukKeranjang[] = [
+  { kodeProduk: "KB001", namaProduk: "Mechanical Keyboard", hargaSatuan: 850000, jumlah: 1, gratisOngkir: true },
+  { kodeProduk: "MS002", namaProduk: "Wireless Mouse", hargaSatuan: 275000, jumlah: 2, gratisOngkir: true },
+  { kodeProduk: "HD003", namaProduk: "External SSD 1TB", hargaSatuan: 1650000, jumlah: 1, gratisOngkir: false },
+  { kodeProduk: "HP004", namaProduk: "Gaming Headset", hargaSatuan: 720000, jumlah: 1, gratisOngkir: true }
+];
+
+console.log(keranjangBelanja);

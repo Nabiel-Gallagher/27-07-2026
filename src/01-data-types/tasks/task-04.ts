@@ -10,3 +10,43 @@
  * 
  * display the book data using console.log.
  */
+
+type Buku = {
+  isbn: string;
+  judul: string;
+  penulis: string;
+  jumlahHalaman: number;
+  kategori: string;
+  tersedia: boolean;
+};
+
+const buku1: Buku = {
+  isbn: "12345678910",
+  judul: "Lengsernya Prabowo Subianto",
+  penulis: "Dhamas Agung",
+  jumlahHalaman: 100,
+  kategori: "Sejarah",
+  tersedia: true
+};
+
+const buku2: Buku = {
+  isbn: "111213141516",
+  judul: "Menjadi Miliarder Di Usia Muda",
+  penulis: "Nabiel Akbar",
+  jumlahHalaman: 200,
+  kategori: "Bisnis",
+  tersedia: false
+};
+
+const buku3: Buku = {
+  isbn: "171819202122",
+  judul: "TPU Samaan 10 Tahun Yang Lalu",
+  penulis: "Aryo Haswoyo",
+  jumlahHalaman: 300,
+  kategori: "Sejarah",
+  tersedia: true
+};
+
+console.log(buku1);
+console.log(buku2);
+console.log(buku3);

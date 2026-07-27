@@ -14,3 +14,24 @@
  * 3. Create the variable declarations using TypeScript.
  * 4. Display the student data using console.log.
  */
+
+const nama: string = "Nadia Putri";
+const nomorMahasiswa: string = "ST2026045";
+
+const nilaiTugas: number = 88.5;
+const nilaiUTS: number = 84;
+const nilaiUAS: number = 91.5;
+const nilaiKehadiran: number = 100;
+
+const ikutEkstra: boolean = true;
+
+const nilaiAkhir: number = (nilaiTugas + nilaiUTS + nilaiUAS + nilaiKehadiran) / 4;
+
+console.log("Nama:", nama);
+console.log("Nomor Mahasiswa:", nomorMahasiswa);
+console.log("Nilai Tugas:", nilaiTugas);
+console.log("Nilai UTS:", nilaiUTS);
+console.log("Nilai UAS:", nilaiUAS);
+console.log("Nilai Kehadiran:", nilaiKehadiran);
+console.log("Ikut Ekstrakurikuler:", ikutEkstra);
+console.log("Nilai Akhir:", nilaiAkhir);
