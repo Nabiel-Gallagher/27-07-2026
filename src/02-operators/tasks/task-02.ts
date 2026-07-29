@@ -14,3 +14,14 @@
  * Task: Store and display the result in a variable named "isEligible"
 
  */
+
+const skorAkhir: number = 82
+const kehadiran: number = 94
+const pembayaranBiaya: string = "Yes"
+
+const isEligible =
+  skorAkhir >= 75 &&
+  kehadiran >= 90 &&
+  pembayaranBiaya === "Yes";
+
+  console.log(isEligible)

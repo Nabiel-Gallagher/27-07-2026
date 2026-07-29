@@ -14,3 +14,26 @@
  *  - Final payment
  * 2. Display the calculation results.
  */
+
+const jumlahNasgor: number = 3
+const hargaNasgor: number = 18000
+const totalMakanan: number = jumlahNasgor * hargaNasgor
+
+const jumlahAir: number = 2
+const hargaAir: number =  5000
+const totalMinuman: number = jumlahAir * hargaAir
+
+const diskon:number = 10000
+
+const totalSebelumDiskon: number = totalMakanan + totalMinuman
+
+const totalSetelahDiskon: number = totalSebelumDiskon - diskon
+
+
+console.log("Total Harga Nasi Goreng: ", totalMakanan);
+console.log("Total Harga Air: ", totalMinuman);
+
+console.log("Grand Total: ", totalSebelumDiskon)
+
+console.log("Diskon: " ,diskon);
+console.log("Final Total: ", totalSetelahDiskon)

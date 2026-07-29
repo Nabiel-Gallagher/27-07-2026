@@ -17,3 +17,20 @@
  * - Bonus
  * - Final salary
  */
+
+const namaKaryawan: string = "Dimas"
+const gajiPokok: number = 5000000
+const jamLembur: number = 12
+const tarifLembur: number = 50000
+
+const bonusKinerja =
+    jamLembur >= 10;
+
+console.log("Nama Karyawan: ", namaKaryawan);
+console.log("Gaji Pokok: ", gajiPokok);
+console.log("Jam Lembur: ", jamLembur);
+console.log("Tarif Lembur: ", tarifLembur);
+
+console.log("Uang Lembur: ", jamLembur * tarifLembur);
+console.log("Bonus Kinerja: ", bonusKinerja ? 300000 : 0);
+console.log("Gaji Akhir: ", gajiPokok + (jamLembur * tarifLembur) + (bonusKinerja ? 300000 : 0));

@@ -22,3 +22,43 @@
  *  - Calculate the final payment.
 
  */
+
+const keyboardHarga = 850000;
+const keyboardJumlah = 1;
+
+const mouseHarga = 275000;
+const mouseJumlah = 2;
+
+const alasMouseHarga = 120000;
+const alasMouseJumlah = 1;
+
+const Premium = true
+
+const totalKeyboard = keyboardHarga * keyboardJumlah
+const totalMouse = mouseHarga * mouseJumlah
+const totalAlasMouse = alasMouseHarga * alasMouseJumlah
+
+const subtotal = totalKeyboard + totalMouse + totalAlasMouse
+
+const totalItem = keyboardJumlah + mouseJumlah + alasMouseJumlah
+
+let diskon = 0;
+
+if (subtotal > 1000000) {
+  diskon = subtotal * 0.1;
+}
+
+let gratisOngkir = false;
+
+if (Premium) {
+  gratisOngkir = true;
+}
+
+const totalBayar = subtotal - diskon;
+
+
+console.log("Subtotal: ", subtotal);
+console.log("Total Item: ", totalItem);
+console.log("Diskon: ", diskon);
+console.log("Gratis Ongkir: ", gratisOngkir);
+console.log("Total Bayar: ", totalBayar);
