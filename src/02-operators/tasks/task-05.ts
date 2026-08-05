@@ -33,3 +33,39 @@
  * - Calculate the remaining scholarship budget.
  * - Display whether the student is accepted.
  */
+
+const namaMahasiswa: string = "Alya Putri";
+const gpa: number = 3.89;
+const pendapatan: number = 4200000;
+const kompetisi: number = 4;
+const catatanPelanggaran: boolean = false;
+const dokumen: boolean = true;
+
+const totalBudget: number = 500000000;
+
+const gpaSesuai = gpa >= 3.75;
+const pendapatanSesuai = pendapatan < 5000000;
+const kompetisiSesuai = kompetisi >= 3;
+const pelanggaranSesuai = catatanPelanggaran === false;
+const dokumentSesuai = dokumen === true;
+
+const isAccepted =
+  gpaSesuai &&
+  pendapatanSesuai &&
+  kompetisiSesuai &&
+  pelanggaranSesuai &&
+  dokumentSesuai;
+
+const scholarshipAmount = isAccepted ? 12000000 : 0;
+
+const remainingBudget = totalBudget - scholarshipAmount;
+
+console.log("Nama Mahasiswa:", namaMahasiswa);
+console.log("IPK Memenuhi:", gpaSesuai);
+console.log("Penghasilan Memenuhi:", pendapatanSesuai);
+console.log("Kompetisi Memenuhi:", kompetisiSesuai);
+console.log("Disiplin Memenuhi:", pelanggaranSesuai);
+console.log("Dokumen Lengkap:", dokumentSesuai);
+console.log("Diterima Beasiswa:", isAccepted);
+console.log("Jumlah Beasiswa: Rp" + scholarshipAmount);
+console.log("Sisa Anggaran: Rp" + remainingBudget);

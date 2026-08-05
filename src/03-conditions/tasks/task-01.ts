@@ -20,3 +20,22 @@
  * will be display "Congratulations! You are eligible to graduate.", 
  * otherwise display "You are not eligible to graduate."
  */
+
+const namaSiswa: string = "Alya Putri"
+const nilaiAkhir: number = 82
+const kehadiran: number = 94
+const biayaDibayar: boolean = true
+
+if (nilaiAkhir >= 75) {
+    if (kehadiran >= 90) {
+        if (biayaDibayar) {
+            console.log("Congratulations! You are eligible to graduate")
+        } else {
+            console.log("You are not eligible to graduate")
+        }
+    } else {
+        console.log("You are not eligible to graduate")
+    }
+} else {
+    console.log("You are not eligible to graduate")
+}

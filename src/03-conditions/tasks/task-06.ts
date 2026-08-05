@@ -23,3 +23,27 @@
  * 2. Implement the hospital workflow using conditional statements.
  * 3. Display the patient's destination.
  */
+
+const namaPasien: string = "Siti Rahma";
+const kondisiKritis: boolean = false;
+const appointment: boolean = true;
+const umur: number = 67;
+const punyaAsuransi: boolean = true;
+
+if (kondisiKritis) {
+    console.log("Dirujuk ke Ruang Gawat Darurat");
+} else {
+    if (appointment) {
+        if (umur >= 60) {
+            console.log("Mendapat Antrian Prioritas");
+        } else {
+            console.log("Antrian Reguler");
+        }
+    } else {
+        if (punyaAsuransi) {
+            console.log("Menuju Loket Pendaftaran Asuransi");
+        } else {
+            console.log("Menuju Loket Pendaftaran Umum");
+        }
+    }
+}

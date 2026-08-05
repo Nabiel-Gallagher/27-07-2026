@@ -36,3 +36,24 @@ Student Tasks
 - Translate every business rule into conditional statements.
 - Display the final machine status.
  */
+
+let mesinDinyalakan: boolean = true
+let suhu: number = 95
+let getaranTinggi: boolean = false
+let kecepatanProduksi: number = 92
+
+if (!mesinDinyalakan) {
+    console.log ("Mesin Mati")
+} else if (suhu > 90) {
+    if (getaranTinggi) {
+        console.log("Penghentian Darurat")
+    } else {
+        console.log("Pendinginan Diperlukan")
+    }
+} else if (suhu <= 90) {
+    if (kecepatanProduksi < 80) {
+        console.log("Peringatan Kinerja")
+    } else {
+        console.log("Mesin Beroprasi Normal")
+    }
+}

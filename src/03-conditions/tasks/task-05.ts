@@ -32,3 +32,20 @@
  *  - Implement the second screening only if the first screening is passed.
  *  - Display the correct result.
  */
+
+const namaSiswa: string = "Fajar Hidayat"
+const IPK: number = 3.86
+const pendapatanKeluarga: number = 4200000
+const jumlahKompetisi: number = 4
+const memilikiCatatan: boolean = false
+const dokumenLengkap: boolean = true
+
+if (IPK >= 3.75 && pendapatanKeluarga < 5000000) {
+    if (jumlahKompetisi >= 3 && memilikiCatatan === false && dokumenLengkap) {
+        console.log("Diterima Beasiswa")
+    } else {
+        console.log("Lolos tahap pertama, Tidak lolos tahap kedua")
+    }
+} else {
+    console.log("Tidak Lolos Tahap Pertama")
+}

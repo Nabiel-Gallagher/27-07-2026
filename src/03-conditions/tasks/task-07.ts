@@ -30,3 +30,19 @@
  * 2. Implement both screening stages.
  * 3. Display the loan decision.
  */
+
+const pelamar: string = "Andi Wijaya"
+const pendapatanBulanan: number = 10000000
+const skorKredit: number = 725
+const utang: number = 2500000
+const karyawanTetap: boolean = true
+
+if (pendapatanBulanan >= 8000000 && skorKredit >= 700) {
+    if (utang <= (30/100 * pendapatanBulanan) && karyawanTetap) {
+        console.log("Pinjaman Disetujui")
+    } else {
+        console.log("Peninjauan Manual")
+    }
+} else {
+    console.log("Pinjaman Ditolak")
+}

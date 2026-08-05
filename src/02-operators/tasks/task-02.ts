@@ -19,9 +19,9 @@ const skorAkhir: number = 82
 const kehadiran: number = 94
 const pembayaranBiaya: string = "Yes"
 
-const isEligible =
+const isEligible: boolean =
   skorAkhir >= 75 &&
   kehadiran >= 90 &&
-  pembayaranBiaya === "Yes";
+  pembayaranBiaya === "Yes"
 
   console.log(isEligible)

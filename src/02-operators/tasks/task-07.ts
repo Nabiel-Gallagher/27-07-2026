@@ -21,3 +21,4 @@
  * - Final payment
  * - Whether the guest is eligible for free breakfast
  */
+

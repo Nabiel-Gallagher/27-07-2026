@@ -27,3 +27,20 @@
  * 2. Implement the airline decision process.
  * 3. Display the correct message.
  */
+
+const penumpang: string = "Fajar Nugroho"
+let CheckOnline: boolean = true
+let kabin: string = "Ekonomi"
+const beratBagasi: number = 24
+
+if (!CheckOnline) {
+    console.log("Silahkan Selesaikan Proses Check-In Online Terlebih Dahulu")
+} else if (beratBagasi > 20) {
+    if (kabin === "Bisnis") {
+        console.log("Bagasi tambahan diperbolehkan")
+    } else if (kabin === "Ekonomi")  {
+        console.log("Biaya bagasi tambahan diperlukan")
+    }
+} else {
+    console.log("Lanjutkan ke pencetakan boarding pass")
+}

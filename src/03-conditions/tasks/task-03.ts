@@ -18,3 +18,14 @@
  * 2. Implement the business rules using if...else if...else.
  * 3. Display the recommended package.
  */
+
+const namaCustomer: string = "Raka Saputra"
+const penggunaanBulanan: number = 50
+
+if (penggunaanBulanan < 50) {
+    console.log("Direkomendasikan menggunakan paket Basic");
+} else if (penggunaanBulanan >= 50 && penggunaanBulanan <= 150) {
+    console.log("Direkomendasikan menggunakan paket Standard");
+} else if (penggunaanBulanan > 150) {
+    console.log("Direkomendasikan menggunakan paket Premium");
+}

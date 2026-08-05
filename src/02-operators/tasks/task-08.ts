@@ -24,3 +24,10 @@
  * - Final bill
  * - Green Energy Program eligibility
  */
+
+const meterSebelumnya: number = 24560
+const meterArus: number = 25892
+const hargaListrikKwh: number = 1650
+const panlerTerpasang: boolean = true
+const modeHemat: boolean = true
+

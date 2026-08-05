@@ -45,3 +45,25 @@ Student Tasks
 - Use nested conditional statements.
 - Display the final registration result.
  */
+
+const namaSiswa: string = "Nadia Putri"
+let siswaAktif: boolean = true
+let biayDibayar: boolean = true
+let lulusMatkulPemrograman: boolean = true
+let lulusMatkulBaseData: boolean = true
+let IPK: number = 3.45
+let kursiTersedia: boolean = false
+
+if (siswaAktif && biayDibayar) {
+    if (lulusMatkulBaseData && lulusMatkulBaseData && IPK >= 3.20) {
+        if (kursiTersedia) {
+            console.log("Pendaftaran Berhasil")
+        } else {
+            console.log("Ditambahkan ke Daftar Tunggu")
+        }
+    } else {
+        console.log ("Persyaratan Akademik Tidak Terpenuhi")
+    }
+} else {
+    console.log("Pendaftaran Ditolak")
+}
