@@ -14,3 +14,12 @@
  * 3. Display the evaluation result. If eligible will display "Bonus Approved", 
  * otherwise display "Bonus not approved"
  */
+
+const namaKaryawan: string = "Dhimas Pratama"
+let skorKinerja: number = 78
+
+if (skorKinerja >= 80) {
+    console.log("Mendapat Bonus Kinerja")
+} else {
+    console.log("Tidak Menerima Bonus Kinerja")
+}

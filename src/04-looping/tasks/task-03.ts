@@ -23,3 +23,30 @@
  * - Number of passing students
  * - Number of failing students
  */
+
+const nilai: number[] =  [ 82, 75, 91, 64, 88, 73, 95, 80, 69, 77, 84, 92, 58, 79, 86, 71, 90, 67, 83, 76 ]
+
+let totalNilai: number = 0
+let lulusTerhitung: number = 0 
+let gagalLulus: number = 0
+
+const nilaiLulus: number = 75
+
+for (let i = 0; i < nilai.length; i++) {
+    const nil: number = nilai[i]
+
+    totalNilai += nil
+
+    if (nil >= nilaiLulus) {
+        lulusTerhitung++
+    } else {
+        gagalLulus++
+    }
+}
+
+const rataRata = totalNilai / nilai.length
+
+console.log("Total Nilai: " + totalNilai);
+console.log("Rata Rata Nilai: " + rataRata);
+console.log("Siswa Lulus: " + lulusTerhitung);
+console.log("Siswa Gagal: " + gagalLulus);
