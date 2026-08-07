@@ -26,3 +26,45 @@ const students = [
     { name: "Gita", score: 92 },
     { name: "Hana", score: 67 }
 ];
+
+let A = 0;
+let B = 0;
+let C = 0;
+let D = 0;
+let total = 0;
+let tertinggi = students[0].score;
+let terendah = students[0].score;
+
+for (let i = 0; i < students.length; i++) {
+    let nilai = students[i].score;
+
+    total += nilai;
+
+    if (nilai >= 90) {
+        A++;
+    } else if (nilai >= 80) {
+        B++;
+    } else if (nilai >= 70) {
+        C++;
+    } else {
+        D++;
+    }
+
+    if (nilai > tertinggi) {
+        tertinggi = nilai;
+    }
+
+    if (nilai < terendah) {
+        terendah = nilai;
+    }
+}
+
+let rataRata = total / students.length;
+
+console.log("Jumlah A: " + A);
+console.log("Jumlah B: " + B);
+console.log("Jumlah C: " + C);
+console.log("Jumlah D: " + D);
+console.log("Nilai tertinggi: " + tertinggi);
+console.log("Nilai terendah: " + terendah);
+console.log("Rata-rata: " + rataRata);

@@ -18,3 +18,30 @@ const stocks = [
     9, 0, 55, 13, 2,
     30, 8, 41, 0, 16
 ];
+
+let outOfStockCount: number = 0;
+let lowStockCount: number = 0;
+let safeStockCount: number = 0;
+let totalInventory: number = 0;
+
+for (let i = 0; i < stocks.length; i++) {
+    const stock: number = stocks[i];
+    totalInventory += stock;
+
+    if (stock === 0) {
+        outOfStockCount++;
+    } else if (stock < 10) {
+        lowStockCount++;
+    } else {
+        safeStockCount++;
+    }
+}
+
+const averageStock: number = totalInventory / stocks.length;
+
+console.log("Jumlah Produk Habis: " + outOfStockCount);
+console.log("Jumlah Produk Stok Rendah: " + lowStockCount);
+console.log("Jumlah Produk Stok Aman: " + safeStockCount);
+console.log("Total Inventaris: " + totalInventory);
+console.log("Rata-rata Jumlah Stok: " + averageStock.toFixed(2));
+

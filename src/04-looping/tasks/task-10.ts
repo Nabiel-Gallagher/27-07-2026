@@ -25,3 +25,46 @@ const submissions = [
     { student: "Gita", submitted: true, score: 90 },
     { student: "Hana", submitted: true, score: 73 }
 ];
+
+let submit: number = 0;
+let tidakSubmit: number = 0;
+let lulus: number = 0;
+let revisi: number = 0;
+let total: number = 0;
+let namaTidakSubmit: string = "";
+let namaRevisi: string = "";
+let namaSubmit: string = "";
+let namaLulus: string = "";
+
+for (let i = 0; i < submissions.length; i++) {
+    let data = submissions[i];
+
+    if (data.submitted) {
+        submit++;
+        total += data.score;
+        namaSubmit += data.student + " ";
+
+        if (data.score >= 75) {
+            lulus++;
+            namaLulus += data.student + " ";
+        } else {
+            revisi++;
+            namaRevisi += data.student + " ";
+        }
+    } else {
+        tidakSubmit++;
+        namaTidakSubmit += data.student + " ";
+    }
+}
+
+let rataRata = total / submissions.length;
+
+console.log("Jumlah yang submit: " + submit);
+console.log("Jumlah yang tidak submit: " + tidakSubmit);
+console.log("Jumlah yang lulus: " + lulus);
+console.log("Jumlah yang revisi: " + revisi);
+console.log("Tidak submit: " + namaTidakSubmit);
+console.log("Perlu revisi: " + namaRevisi);
+console.log("Rata-rata kelas: " + rataRata);
+console.log("Nama yang submit: " + namaSubmit);
+console.log("Nama yang lulus: " + namaLulus);

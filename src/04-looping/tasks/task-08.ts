@@ -21,3 +21,25 @@ const orders = [
   { id: "ORD005", paid: false, stockAvailable: false },
   { id: "ORD006", paid: true, stockAvailable: true }
 ];
+
+let siap = 0;
+let belumBayar = 0;
+let stok = 0;
+let idSiap = "";
+
+for (let i = 0; i < orders.length; i++) {
+
+    if (orders[i].paid && orders[i].stockAvailable) {
+        siap++;
+        idSiap += orders[i].id + " ";
+    } else if (!orders[i].paid) {
+        belumBayar++;
+    } else {
+        stok++;
+    }
+}
+
+console.log("Siap dikirim: " + siap);
+console.log("Belum dibayar: " + belumBayar);
+console.log("Menunggu stok: " + stok);
+console.log("ID siap dikirim: " + idSiap);

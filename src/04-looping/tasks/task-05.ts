@@ -24,3 +24,26 @@ const scores = [
     67, 79, 94, 83, 71,
     96, 65, 87, 74, 90
 ];
+
+let goldCount: number = 0;
+let silverCount: number = 0;
+let bronzeCount: number = 0;
+let noMedalCount: number = 0;
+let totalScore: number = 0;     
+
+for (let i = 0; i < scores.length; i++) {
+    const score: number = scores[i];
+    totalScore += score;
+
+    if (score >= 95) {
+        goldCount++;
+    } else if (score >= 85) {
+        silverCount++;
+    } else if (score >= 75) {
+        bronzeCount++;
+    } else {
+        noMedalCount++;
+    }
+}
+
+const averageScore: number = totalScore / scores.length;

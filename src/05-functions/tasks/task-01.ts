@@ -15,3 +15,13 @@
  * 3. After the loop finishes, display: "Attendance verification completed"
 
  */
+
+function cek(totalSiswa: number): void {
+    for (let i: number = 1 ; i <= totalSiswa; i++) {
+    console.log("Memeriksa Kehadiran Siswa " + i)
+}
+    console.log()
+    console.log("Verifikasi Kehadiran Selesai")
+}
+
+cek(30)
